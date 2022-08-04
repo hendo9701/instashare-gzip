@@ -1,5 +1,7 @@
 # instashare-gzip
 
+![example workflow](https://github.com/hendo9701/instashare-gzip/actions/workflows/main.yml/badge.svg)
+
 ## Description
 
 This is a worker service for compressing files. The service listens from a named exchange in a message broker for file
