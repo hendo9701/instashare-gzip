@@ -16,7 +16,7 @@ public class FileService {
     return fileRepository.findById(id);
   }
 
-  public File save(File file) {
+  public File save(@NonNull File file) {
     return fileRepository.save(file);
   }
 }
