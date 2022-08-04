@@ -20,4 +20,4 @@ jobs:
           java-version: '17'
 
       - name: Run tests
-        run: sudo mvn -B test --file pom.xml
+        run: mvn -B test --file pom.xml
