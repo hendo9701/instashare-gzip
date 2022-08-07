@@ -18,15 +18,11 @@ import static org.mockito.Mockito.when;
 @ExtendWith(SpringExtension.class)
 class FileServiceTest {
 
-  @MockBean FileRepository fileRepository;
-
-  FileService fileService;
-
   private final String EXISTING_ID = "1";
-
   private final String NON_EXISTING_ID = "2";
-
   private final File someFile = new File(EXISTING_ID, "", "", FileStatus.RAW, 1L, "");
+  @MockBean FileRepository fileRepository;
+  FileService fileService;
 
   @BeforeEach
   void setup() {

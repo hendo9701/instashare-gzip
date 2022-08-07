@@ -30,15 +30,11 @@ import static org.mockito.Mockito.*;
 @ExtendWith(SpringExtension.class)
 class ConsumeMessageServiceTest {
 
-  ConsumeMessageService consumeMessageService;
-
-  @MockBean AmazonS3 amazonS3;
-
-  @MockBean S3ClientConfigurationProperties clientConfigurationProperties;
-
-  @MockBean FileService fileService;
-
   private static final String NON_EXISTING_ID = "1";
+  ConsumeMessageService consumeMessageService;
+  @MockBean AmazonS3 amazonS3;
+  @MockBean S3ClientConfigurationProperties clientConfigurationProperties;
+  @MockBean FileService fileService;
 
   @BeforeEach
   void prepare() {
